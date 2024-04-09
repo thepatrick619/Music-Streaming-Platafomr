@@ -7,29 +7,35 @@ This project is a course example to create a backend system _using object-orient
 This is a music streaming platform where users can login from a web platform to listen to music, podcast, follow favorite artists and singers, save music and podcast and make playlist 
 
 ### Business rules 
-- Podcast may not be longer that 1 hour
 - Songs may not be longer that 10 minutes 
 - To login you need to have a username and a password 
 - There can not be repeated user names 
+- The listeners can be free users or subscriptor
 
 ## User Stories
 
-- __As a__ _artist_, __I want__ to see all reproductions of my music and my podcasts.
-- __As a__ _listener_, __I want__ listen to any song and podcast available.
-- __As a__ _listener_, __I want__ create a playlist with my favorite songs.
-- __As a__ _listener_, __I want__ like and save a song.
-- __As a__ _artist_, __I want__ upload and delete a song or podcast.
+- __As a__ _artist_, __I want__ to see all reproductions of my songs, __so what__ see the best songs.
+- __As a__ _listener_, __I want__ to listen to any songs available,  __so what__ see new songs.
+- __As a__ _listener_, __I want__ create a playlist with songs, __so what__ listen to my favorite songs one after another.
+- __As a__ _listener_, __I want__ like and save a song, __so what__ listen to my favorite music without searching for them.
+- __As a__ _artist_, __I want__ upload and delete my songs, __so what__ show my songs.
 
 ## Technical definitions
 
 ### tools to Use
 
+In this case, the backend will be build using _pytohn 3.11.0_, and some related technologies as _Pytest_ to apply some simple unit test, and _Black_ to auto-format the code and increase code readability.
 
 
 ## Entities
-- User: name, id, email, password, login, logout()
-- listener(User): play(), like(), add, create_playlist()[E]
-- artist(User): upload(), delete()
-- content: duration, artist[E]
-- song(Content): musical genre
-- podcast(Content): topic
+- __User__: name, id, email, password, login(), logout(), search(),play()
+- __listener(User)__: like(), add, create_playlist()[E]
+- __free user(listener)__:
+- __susbcriptor(listener)__: pay subscription(), 
+- __artist(User)__: upload(), delete()
+- __song__: duration, artist[E], musical genre
+- __podcast(Content)__: topic
+- __playlist__: len, duration, song[E]
+- __save__:date, song[E]
+
+# Processes
