@@ -36,9 +36,8 @@ In this case, the backend will be build using _pytohn 3.11.0_, and some related 
 - __artist(User)__: upload(), delete()
 - __song__: name, duration, artist[E], musical genre, upload(), delete()
 - __playlist__: len, duration, song[E]
-- album: name, song[E]
-- subscription: price, duration
-
+- __album__: name, song[E]
+- __subscription__: price, duration
 
 # Processes
 - Create a Playlist:
