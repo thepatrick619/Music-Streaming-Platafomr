@@ -18,7 +18,8 @@ This is a music streaming platform where users can login from a web platform to 
 - __As a__ _listener_, __I want__ to listen to any songs available,  __so what__ see new songs.
 - __As a__ _listener_, __I want__ create a playlist with songs, __so what__ listen to my favorite songs one after another.
 - __As a__ _listener_, __I want__ like and save a song, __so what__ listen to my favorite music without searching for them.
-- __As a__ _artist_, __I want__ upload and delete my songs, __so what__ show my songs.
+- __As a__ _artist_, __I want__ upload and delete my songs, __so what__ show my songs and remove them.
+- __As a__ _artist_, __I want__ create albums with my songs, __so what__.
 
 ## Technical definitions
 
@@ -30,12 +31,19 @@ In this case, the backend will be build using _pytohn 3.11.0_, and some related 
 ## Entities
 - __User__: name, id, email, password, login(), logout(), search(),play()
 - __listener(User)__: like(), add, create_playlist()[E]
-- __free user(listener)__:
-- __susbcriptor(listener)__: pay subscription(), 
+- __free user(listener)__: publicity()[E]
+- __susbcriptor(listener)__: subscription()[E] 
 - __artist(User)__: upload(), delete()
-- __song__: duration, artist[E], musical genre
-- __podcast(Content)__: topic
+- __song__: name, duration, artist[E], musical genre, upload(), delete()
 - __playlist__: len, duration, song[E]
-- __save__:date, song[E]
+- album: name, song[E]
+- subscription: price, duration
+
 
 # Processes
+- Create a Playlist:
+- Search songs: 
+- give like:
+- listen songs:
+- upload song
+- delete song:
