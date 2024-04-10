@@ -9,8 +9,8 @@ This is a music streaming platform where users can login from a web platform to 
 ### Business rules 
 - Songs may not be longer that 10 minutes 
 - To login you need to have a username and a password 
-- There can not be repeated user names 
-- The listeners can be free users or subscriptor
+- There can not be repeated user names
+  
 
 ## User Stories
 
@@ -31,8 +31,6 @@ In this case, the backend will be build using _pytohn 3.11.0_, and some related 
 ## Entities
 - __User__: name, id, email, password, login(), logout(), search(),play()
 - __listener(User)__: like(), add, create_playlist()[E]
-- __free user(listener)__: publicity()[E]
-- __susbcriptor(listener)__: subscription()[E] 
 - __artist(User)__: upload(), delete()
 - __song__: name, duration, artist[E], musical genre, upload(), delete()
 - __playlist__: len, duration, song[E]
@@ -40,9 +38,10 @@ In this case, the backend will be build using _pytohn 3.11.0_, and some related 
 - __subscription__: price, duration
 
 # Processes
-- Create a Playlist:
-- Search songs: 
-- give like:
-- listen songs:
+- Create a Playlist
+- Create a Playlist
+- Search songs 
+- give like
+- listen songs
 - upload song
-- delete song:
+- delete song
