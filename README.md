@@ -29,7 +29,7 @@ In this case, the backend will be build using _pytohn 3.11.0_, and some related 
 
 
 ## Entities
-- __User__: name, id, email, password, login(), logout(), search(),play()
+- __User__: name, id, email, password, login(), logout(), search(),play(), singup()
 - __listener(User)__: like(), add, create_playlist()[E]
 - __artist(User)__: upload(), delete()
 - __song__: name, duration, artist[E], musical genre, upload(), delete()
